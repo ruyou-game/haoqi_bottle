@@ -1,0 +1,35 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:id="@+id/main_layout"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent" android:background="@drawable/sky_bg" android:layout_above="@+id/beach_layout"
+        android:layout_height="wrap_content">
+        <com.zhan.haoqi.bottle.view.WaveView
+            android:id="@+id/wave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView android:id="@+id/land"
+            android:layout_width="200dp" android:src="@mipmap/default_theme_land" android:layout_alignParentRight="true"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <RelativeLayout android:id="@+id/beach_layout"
+        android:layout_width="match_parent" android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"  android:id="@+id/menu_layout" android:orientation="horizontal"
+        android:layout_alignParentBottom="true" android:layout_marginBottom="10dp" android:background="@color/red"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content" android:id="@+id/send_bottle" android:src="@mipmap/bottle_send"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>
