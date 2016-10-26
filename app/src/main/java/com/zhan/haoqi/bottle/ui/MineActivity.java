@@ -18,7 +18,5 @@ public class MineActivity extends Activity {
 
     }
     public void login(View v){
-        IUiListener listener =new BaseU
-        mTencent.login(this, SCOPE, listener);
     }
 }

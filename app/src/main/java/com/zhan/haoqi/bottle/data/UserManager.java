@@ -22,6 +22,5 @@ public class UserManager {
 
 
     public void tencentAuth(){
-        Tencent.createInstance()
     }
 }

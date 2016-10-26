@@ -9,4 +9,10 @@
     <color name="green">#b7d28d</color>
     <color name="blue">#b8f1ed</color>
     <color name="transprant">#00000000</color>
+    <color name="half_transprant">#88D4D4D4</color>
+    
+    
+    
+    <drawable name="transprant_bitmap">@color/transprant</drawable>
+    <drawable name="half_transprant_bitmap">@color/half_transprant</drawable>
 </resources>

@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:background="@mipmap/welcome_bg"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"  android:orientation="vertical"
     android:layout_height="match_parent">
 
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="60dp">
+      <ImageView android:layout_alignParentRight="true" android:id="@+id/close"
+          android:layout_width="60dp" android:layout_centerVertical="true"
+          android:src="@mipmap/close" android:background="@drawable/view_selector" android:padding="20dp"
+          android:layout_height="60dp" />
+  </RelativeLayout>
 
-</RelativeLayout>
+
+</LinearLayout>

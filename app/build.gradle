@@ -1,5 +1,7 @@
 apply plugin: 'com.android.application'
 
+apply plugin: 'android-apt'
+
 android {
     compileSdkVersion 24
     buildToolsVersion "24.0.1"
@@ -19,10 +21,13 @@ android {
     }
 }
 
-
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:24.1.0'
     compile project(':im')
     compile files('libs/open_sdk_r5756_lite.jar')
+
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+
 }
