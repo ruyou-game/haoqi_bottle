@@ -16,7 +16,7 @@
         </activity>
         <activity android:name=".ui.MainActivity" android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ui.SendBottleActivity" android:screenOrientation="portrait"  />
+        <activity android:name=".ui.SendBottleActivity" android:screenOrientation="portrait" android:theme="@style/HalfTransparent" />
         <activity android:name=".ui.MineActivity" android:screenOrientation="portrait"  />
 
     </application>

@@ -8,4 +8,26 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+
+    <style name="HalfTransparent">
+        <item name="android:windowBackground">@color/white_95</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="bottle_type">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/light_black</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">@dimen/dimen8</item>
+        <item name="android:onClick">onClick</item>
+    </style>
+
 </resources>

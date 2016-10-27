@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"  android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
   <RelativeLayout
-      android:layout_width="match_parent"
+      android:layout_width="match_parent" android:layout_alignParentTop="true"
       android:layout_height="60dp">
       <ImageView android:layout_alignParentRight="true" android:id="@+id/close"
           android:layout_width="60dp" android:layout_centerVertical="true"
@@ -13,4 +13,41 @@
   </RelativeLayout>
 
 
-</LinearLayout>
+  <View
+      android:layout_width="0.0dp" android:id="@+id/center_point"
+      android:layout_height="0.0dp" android:layout_centerInParent="true"></View>
+
+  <TextView
+      android:layout_width="wrap_content" android:id="@+id/bottle_type_audio" android:text="@string/bottle_type_audio" style="@style/bottle_type" android:layout_marginBottom="@dimen/dimen10"
+      android:drawableTop="@drawable/bottle_type_audio_selector" android:layout_above="@+id/center_point" android:layout_centerHorizontal="true" android:layout_marginLeft="@dimen/dimen20" android:layout_marginRight="@dimen/dimen20"
+      android:layout_height="wrap_content" />
+
+  <TextView
+      android:layout_width="wrap_content" android:id="@+id/bottle_type_img" android:text="@string/bottle_type_image" style="@style/bottle_type"
+       android:drawableTop="@drawable/bottle_type_img_selector"  android:layout_toLeftOf="@+id/bottle_type_audio" android:layout_alignBottom="@+id/bottle_type_audio"
+      android:layout_height="wrap_content" />
+
+  <TextView
+      android:layout_width="wrap_content" android:id="@+id/bottle_type_question" android:text="@string/bottle_type_question" style="@style/bottle_type"
+       android:drawableTop="@drawable/bottle_type_comment_selector"  android:layout_toRightOf="@+id/bottle_type_audio" android:layout_alignBottom="@+id/bottle_type_audio"
+      android:layout_height="wrap_content" />
+
+
+  <TextView
+      android:layout_width="wrap_content" android:id="@+id/bottle_type_redpackage" android:text="@string/bottle_type_redpackage" android:layout_marginTop="@dimen/dimen10"
+      android:layout_below="@+id/bottle_type_audio" android:layout_centerHorizontal="true" style="@style/bottle_type"
+       android:drawableTop="@drawable/bottle_type_redpackage_selector" android:layout_marginRight="@dimen/dimen20" android:layout_marginLeft="@dimen/dimen20"
+      android:layout_height="wrap_content" />
+
+  <TextView
+      android:id="@+id/bottle_type_secret"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content" style="@style/bottle_type"
+      android:text="@string/bottle_type_secret"
+      android:drawableTop="@drawable/bottle_type_secret_selector"
+      android:layout_toLeftOf="@+id/bottle_type_redpackage"
+      android:layout_alignBottom="@+id/bottle_type_redpackage"
+       />
+
+
+</RelativeLayout>

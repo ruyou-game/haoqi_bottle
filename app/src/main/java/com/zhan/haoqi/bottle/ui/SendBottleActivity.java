@@ -2,6 +2,7 @@ package com.zhan.haoqi.bottle.ui;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
 
 import com.zhan.haoqi.bottle.R;
 
@@ -22,5 +23,19 @@ public class SendBottleActivity extends Activity {
     @OnClick(R.id.close)
     public void onClick() {
         finish();
+    }
+    public void onClick(View v) {
+       switch (v.getId()){
+           case R.id.bottle_type_img:
+               break;
+           case R.id.bottle_type_audio:
+               break;
+           case R.id.bottle_type_question:
+               break;
+           case R.id.bottle_type_secret:
+               break;
+           case R.id.bottle_type_redpackage:
+               break;
+      }
     }
 }

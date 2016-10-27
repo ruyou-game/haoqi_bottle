@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">yuanfen_bottle</string>
+
+
+    <string name="bottle_type_image">图片瓶</string>
+    <string name="bottle_type_audio">语音瓶</string>
+    <string name="bottle_type_question">话题瓶</string>
+    <string name="bottle_type_secret">秘密瓶</string>
+    <string name="bottle_type_redpackage">红包瓶</string>
 </resources>
